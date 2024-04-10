@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+    href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+    rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+    <script src="js/changeBg.js" defer></script>
+    <script src="js/openDopFunc.js" defer></script>
+    <script src="js/script.js" defer></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+    <video autoplay loop muted class="bgvideo hidden" id="bgvideo">
+      <source src="video/matrx.mp4" type="video/mp4"></source>
+    </video>
+		<header class="header">
+      <div class="header-container">
+        <button class="change-them">Сделать фон динамичным</button>
+				<marquee scrollamount="15" behavior="scroll" class="text-horizontal">
+					Мой калькулятор лучшe 😝
+				</marquee>
+			</div>
+		</header>
+    <main class="main">
+      <div class="container">
+        <div class="main-wrapper">
+          <div class="calc-box">
+            <div class="calc-screen">
+              <p class="calc-result"></p>
+              <input dir="" class="calc-expression" value="0" type="text">
+              <!-- <p class="calc-expression">0</p> -->
+            </div>
+            <div class="calc-func-row">
+              <div class="calc-dop-func calc-dop-left hidden">
+                <button class="functional" id="squaring">x^</button>
+                <button class="functional" id="integral">x!</button>
+                <button class="functional" id="fraction">1/x</button>
+              </div>
+              <div class="calc-func">
+              <button class="specFunctional" id="clear">CL</button>
+              <button class="specFunctional" id="clearStr">C</button>
+              <button class="specFunctional" id="clearOneSymbol">
+                <img class="icon" src="img/icons8-стереть-символ-50.png" alt="">
+              </button>
+              <button class="functional" id="division">/</button>
+              <button class="number" value="1">1</button>
+              <button class="number" value="2">2</button>
+              <button class="number" value="3">3</button>
+              <button class="functional" id="multiply">*</button>
+              <button class="number" value="4">4</button>
+              <button class="number" value="5">5</button>
+              <button class="number" value="6">6</button>
+              <button class="functional" id="minus">-</button>
+              <button class="number" value="7">7</button>
+              <button class="number" value="8">8</button>
+              <button class="number" value="9">9</button>
+              <button class="functional" id="plus">+</button>
+              <button class="number" id="zero" value="0">0</button>
+              <button class="specFunctional" id="dot">.</button>
+              <button class="functional" id="equally">=</button>
+              </div>
+              <div class="calc-dop-func calc-dop-right hidden">
+                <button class="specFunctional" id="root"><img class="icon" src="img/icons8-квадратный-корень-50.png" alt=""></button>
+                <button class="specFunctional" id="changeSign">+/-</button>
+                <button class="specFunctional" id="procent">%</button>
+              </div>
+            </div>
+          </div>
+          <button class="dop-func change-them">
+            Дополнительные функции
+          </button>
+        </div>
+      </div>
+    </main>
+	</body>
+</html>
+
