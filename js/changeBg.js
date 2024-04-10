@@ -3,6 +3,7 @@ const changeBtn = document.querySelector('.change-them')
 
 if (localStorage.getItem('bg')){
 	bgVideo.classList.remove('hidden')
+	changeBtn.textContent = 'Сделать фон статичным'
 }
 
 changeBtn.addEventListener('click', () => {

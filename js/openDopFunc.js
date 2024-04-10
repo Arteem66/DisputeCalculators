@@ -4,6 +4,7 @@ const dopFunc = document.querySelectorAll('.calc-dop-func')
 if (localStorage.getItem('dopFunc')){
   dopFunc.forEach(item => {
     item.classList.remove('hidden')
+    dopFuncBtn.textContent = 'Убрать дополнительные функции'
   })
 }
 
